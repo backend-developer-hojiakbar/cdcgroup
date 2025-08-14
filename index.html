@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CDCGROUP - Innovatsiya Bizning Asosimiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #111827; /* bg-gray-900 */
+        font-family: 'Poppins', sans-serif;
+        color: #d1d5db; /* text-gray-300 */
+      }
+      .glass-panel {
+        background: rgba(31, 41, 55, 0.5); /* bg-gray-800 with opacity */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .text-glow {
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+      }
+      .glow-effect {
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4);
+      }
+      .cyan-glow-effect {
+          box-shadow: 0 0 8px rgba(34, 211, 238, 0.7), 0 0 20px rgba(34, 211, 238, 0.4);
+      }
+      .orb-glow {
+        box-shadow: 0 0 15px rgba(34, 211, 238, 0.5), 
+                    0 0 30px rgba(34, 211, 238, 0.3),
+                    0 0 60px rgba(139, 92, 246, 0.3),
+                    inset 0 0 10px rgba(255, 255, 255, 0.2);
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.7s ease-out;
+        animation-fill-mode: forwards; /* Keep state after animation */
+        opacity: 0;
+      }
+      .animation-delay-200 {
+        animation-delay: 200ms;
+      }
+      .animation-delay-400 {
+        animation-delay: 400ms;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.8.0",
+    "react-icons/": "https://esm.sh/react-icons@^5.5.0/",
+    "react-icons": "https://esm.sh/react-icons@^5.5.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0",
+    "framer-motion": "https://esm.sh/framer-motion@^11.3.12"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
