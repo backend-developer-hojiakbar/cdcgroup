@@ -37,6 +37,7 @@ export const NAV_ICON_MAP: { [key: string]: React.ElementType } = {
 };
 
 // Bu statik qoladi, chunki bu kompaniyaning o'zgarmas linklari
+// sfdhjfsdhjfsdhbjsdfhjbsdfhjbsd
 export const SOCIAL_LINKS_DATA = [
     { name: 'Telegram', icon: FaTelegramPlane, url: 'https://t.me/Xazrat_bro' },
     { name: 'LinkedIn', icon: FaLinkedin, url: '#' },
